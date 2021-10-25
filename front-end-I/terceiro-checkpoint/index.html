@@ -7,62 +7,157 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Home</title>
+    <link rel="stylesheet" href="styles/animacao.css">
+    <link rel="stylesheet" href="styles/responsivo.css">
+    <script src="app.js" defer></script>
+    <title>PlayStation CheckPoint III</title>
 </head>
 
 <body>
-
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <p>Insira suas credenciais:</p>
+          <form action="">
+              <div>
+                <label for="">Login</label>
+                <input type="text">
+              </div>
+              <div>
+                <label for="">Senha</label>
+                <input type="password">
+              </div>
+              <button>Logar</button>
+              
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
     <header>
-
+        <button id="bt-menu"></button>
         <img src="./img/logo.png" alt="logo imagem">
-        
-        <nav class="menu-principal">
-            <ul>
-                <li>
-                    <a href="">Descubra o universo de Horizon</a>
-                </li>
 
-                <li>
-                    <a href="">Jogos Novidades</a>
-                </li>
-                <li>
-                    <a href="#">Comunidade</a>
-                </li>
-                <li>
-                    <a href="#">Produtos</a>
-                </li>
-                <li>
-                    <a href="#">Perguntas</a>
-                </li>
-            </ul>
-        </nav>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <a href="#universo-horizon">Descubra o universo de Horizon</a>
+                    </li>
+                    <li>
+                        <a href="https://www.playstation.com/pt-br/horizon/#games">Jogos</a>
+                    </li>
+                    <li>
+                        <a href="https://www.playstation.com/pt-br/horizon/#latestnews">Novidades</a>
+                    </li>
+                    <li>
+                        <a href="https://www.playstation.com/pt-br/horizon/community/">Comunidade</a>
+                    </li>
+                    <li>
+                        <a href="https://www.playstation.com/pt-br/horizon/merchandise/">Produtos</a>
+                    </li>
+                    <li>
+                        <a href="https://www.playstation.com/pt-br/horizon/#faqs">Perguntas Frequentes</a>
+                    </li>
+                    <li>                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</a></li>
+                </ul>
+            </nav>
     </header>
 
-    <section>
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <section class="carrosel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://images-ext-1.discordapp.net/external/41Ve-rAnJunNxTriorp0jojzKdlwQYyNVsjDEZ4xuRk/%3F%244000px%24/https/gmedia.playstation.com/is/image/SIEPDC/horizon-landing-hub-hero-banner-desktop-01-en-19aug21?width=1025&height=383" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://images-ext-1.discordapp.net/external/41Ve-rAnJunNxTriorp0jojzKdlwQYyNVsjDEZ4xuRk/%3F%244000px%24/https/gmedia.playstation.com/is/image/SIEPDC/horizon-landing-hub-hero-banner-desktop-01-en-19aug21?width=1025&height=383" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="https://images-ext-1.discordapp.net/external/41Ve-rAnJunNxTriorp0jojzKdlwQYyNVsjDEZ4xuRk/%3F%244000px%24/https/gmedia.playstation.com/is/image/SIEPDC/horizon-landing-hub-hero-banner-desktop-01-en-19aug21?width=1025&height=383" class="d-block w-100" alt="...">
-              </div>
+                <div class="carousel-item active">
+                    <img src="./img/slide-1.jpg" class="d-block w-100" alt="...">
+                    <div class="box-effect-text effect-text">
+                        <h2>Este é o lar oficial de todas as coisas relacionadas a Horizon.</h2>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide-2.jpg" class="d-block w-100" alt="...">
+                    <div class="box-effect-text box-2 effect-text">
+                        <h2>Pré-venda disponível</h2>
+                        <p>Os detalhes da pré-venda desta continuação inspiradora da jornada da Aloy já estão disponíveis. Lançamento em 18 de fevereiro de 2022.</p>
+                        <button type="button" class="button-slide">Compre já na pré-venda</button>
+                        <button type="button" class="button-slide button-2">Assista ao trailer de jogabilidade</button>
+                        </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide-3.jpg" class="d-block w-100" alt="...">
+                    <div class="box-effect-text effect-text box-3">
+                        <h2>Conheça os compositores</h2>
+                        <p>
+                            Está curtindo a música do Oeste Proibido? Em comemoração ao Isle of Spires EP, conheça os compositores responsáveis pela trilha sonora e saiba como foi o processo criativo deles.
+                        </p>
+                        <button class="button-slide button-3">Ler mais</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide-4.jpg" class="d-block w-100" alt="...">
+                    <div class="box-effect-text effect-text box-4">
+                        <h2>Novo produto: linha Raw Materials de Horizon</h2>
+                        <p>Estamos expandindo a linha Raw Materials de Horizon. Adicione-as à sua coleção!</p>
+                        <button class="button-slide button-2">Comprar já</button>
+                    </div>
+                </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-    </section>
+            <section class="mini-slide">
+                <img class="seletor-slide" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-label="Slide 1" src="./img/slide-1.jpg" alt="">
+                <img class="seletor-slide"data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" src="./img/slide-2.jpg" alt="">
+                <img class="seletor-slide" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" src="./img/slide-3.jpg" alt="">
+                <img class="seletor-slide" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3" src="./img/slide-4.jpg" alt="">
+            </section>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+            <section class="banner-parallax" id="universo-horizon" >
+                <div>
+                    <h1>Descubra o universo de Horizon</h1>
+                    <div class="imagens-parallax">
+                        <div class="box-horizon">
+                            <img src="./img/paralax1.jpg">
+                            <h1>Natureza e ruínas imponentes</h1>
+                            <p>Desde cordilheiras congeladas ao norte até as selvas densas e quentes ao sul, o mundo de Horizon abrange várias geografias distintas. Por toda parte há ruínas tomadas por vegetação que marcam os vestígios de uma civilização perdida. </p>
+                            <a class="bt-detalhes" href="https://www.playstation.com/pt-br/horizon/merchandise/">Detalhes</a>
+                        </div>
+
+                        <div class="box-horizon">
+                            <img src="./img/paralax2.jpg">
+                            <h1>Máquinas formidáveis</h1>
+                            <p>O mundo de Horizon é habitado por máquinas altamente avançadas de todos os tamanhos e formas. Com traços alienígenas assustadores, mas estranhamente familiares, estas máquinas misteriosas são uma combinação de força mecânica, formas orgânicas e uma ferocidade animalesca.</p>
+                            <a class="bt-detalhes" href="https://www.playstation.com/pt-br/horizon/merchandise/">Detalhes</a>
+                        </div>
+
+                        <div class="box-horizon">
+                            <img src="./img/paralax3.jpg">
+                            <h1>Cultura tribal</h1>
+                            <p>No mundo de Horizon, os humanos que sobreviveram se agruparam em várias tribos. Cada uma delas desenvolveu cultura e tradições próprias, uma vez que elas não têm acesso aos avanços tecnológicos e ao conhecimento de outrora.</p>
+                            <a class="bt-detalhes" href="https://www.playstation.com/pt-br/horizon/merchandise/">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="banner-down background-banner-1">
+                <section class="text-info-banner">
+                    <h2>Parte I: Um presente do passado</h2>
+                    <p>Aloy foi criada e treinada na arte da sobrevivência por Rost, um exilado da tribo Nora, após encontrá-la sozinha na Mãe-de-Todos, nossa montanha sagrada. Tratada como "sem-mãe" por outras crianças, ela caiu em uma caverna construída há muito tempo pelos Antigos e lá achou um Foco, um dispositivo que mostra visões somente visíveis para ela.</p>
+                    <p>Aloy aprendeu mais com essas visões do que dez gerações de anciãs poderiam revelar sobre o nosso mundo... e o mundo do passado. E isso só levou a mais perguntas do que respostas. Ela então treinou com Rost para aperfeiçoar as habilidades de caça e luta em preparação a um desafio chamado A Provação. A vitória no desafio poderia estabelecer Aloy como um membro digno da tribo Nora e, talvez, ajudar a responder o mistério da origem dela.</p>
+            </section>
+
+            </section>
+            <section class="banner-down background-banner-2">
+                <section class="text-info-banner">
+                    <h2>Origens mecânicas</h2>
+                    <p>Aloy então partiu para o âmago da ruína do Velho Mundo, Fim do Criador, guiada por uma voz peculiar. Nessa ruína, ela descobre uma instalação que criou máquinas de guerra terríveis, as mesmas que agora vagam por nossas terras.</p>
+                    <p>Dois cientistas, Ted Faro e Elisabet Sobeck, projetaram e programaram essas criaturas de metal para que se replicassem com o consumo de matéria orgânica. No entanto, quando as máquinas entraram em pane e começaram a multiplicar-se de forma descontrolada, o planeta corria o risco de ser tomado por elas.</p>
+                    <p>Essa "Praga Faro" parecia invencível, mesmo com a intervenção dos maiores sábios dos Antigos. Em um ato de desespero, Sobeck criou o Projeto: Zero Dawn, enquanto Faro e os guerreiros dos Antigos criaram uma arma de destruição global.</p>
+                </section>
+            </section>
+           
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 </body>

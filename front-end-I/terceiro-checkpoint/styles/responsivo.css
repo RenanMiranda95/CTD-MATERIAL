@@ -1,0 +1,77 @@
+@media(max-width: 768px)
+{
+
+    #bt-menu
+    {
+        width: 30px;
+        height: 30px;
+        background-image: url("https://img.icons8.com/ios-glyphs/60/000000/menu--v1.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(240, 255, 255, 0);
+        display: block;
+        border:none;
+        position: absolute;
+        right: 1%;
+    }
+
+    #menu
+    {
+        width: 60vw;
+        position: absolute;
+        right: 0px;
+        top: 60px;
+        display: none;
+        background-color: rgba(255, 255, 255, 0.849);
+    }
+
+    #menu.active
+    {
+        display:block;
+    }
+
+    header nav li
+    {
+        display: block;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .mini-slide
+    {
+        flex-wrap: wrap;
+    }
+
+    .seletor-slide
+    {
+        margin: 10px;
+    }
+
+    .imagens-parallax
+    {
+        flex-wrap: wrap;
+    }
+
+    .imagens-parallax div
+    {
+        margin: 1%;
+    }
+
+    .banner-down
+    {
+        height: auto;
+    }
+}
+
+@media(max-width: 500px)
+{
+
+    .box-effect-text
+    {
+    width: 85%;
+    height: auto;
+    left: 10%;
+    }
+
+}
