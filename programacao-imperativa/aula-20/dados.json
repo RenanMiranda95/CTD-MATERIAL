@@ -1,0 +1,77 @@
+[
+    {
+        "nome":"Marcus",
+        "idade": 18,
+        "opniao":"Bom"
+    },
+    {
+        "nome":"Wiliam",
+        "idade": 22,
+        "opniao":"Regular"
+    },
+    {
+        "nome":"Laís",
+        "idade": 30,
+        "opniao":"Ótimo"
+    },
+    {
+        "nome":"Zoie",
+        "idade": 16,
+        "opniao":"Regular"
+    },
+    {
+        "nome":"Luís",
+        "idade": 52,
+        "opniao":"Regular"
+    },
+    {
+        "nome":"Lucas",
+        "idade": 44,
+        "opniao":"Regular"
+    },
+    {
+        "nome":"Wanda",
+        "idade": 17,
+        "opniao":"Regular"
+    },
+    {
+        "nome":"Bruno",
+        "idade": 26,
+        "opniao":"Bom"
+    },
+    {
+        "nome":"Igor",
+        "idade": 37,
+        "opniao":"Bom"
+    },
+    {
+        "nome":"Zuca",
+        "idade": 43,
+        "opniao":"Ótimo"
+    },
+    {
+        "nome":"Ana",
+        "idade": 18,
+        "opniao":"Bom"
+    },
+    {
+        "nome":"Marta",
+        "idade": 14,
+        "opniao":"Regular"
+    },
+    {
+        "nome":"Carol",
+        "idade": 29,
+        "opniao":"Ótimo"
+    },
+    {
+        "nome":"Bill",
+        "idade": 25,
+        "opniao":"Regular"
+    },
+    {
+        "nome":"Elon",
+        "idade": 52,
+        "opniao":"Regular"
+    }
+]
