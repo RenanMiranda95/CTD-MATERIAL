@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <script src="./js/app.js" defer></script>
+    <title>2º CheckPoint</title>
+</head>
+<body>
+    <header>
+        <button class="menu-button" id="bt-menu"></button>
+        <span class="logo">salvador</span>
+        <nav class="nav-menu" id="nav-menu">
+            <ul id="menu">
+                <a href="./index.html"><li>inicio</li></a>
+                <a href="#"><li>galeria de fotos</li></a>
+                <a href="#"><li>lazer</li></a>
+                <a href="#"><li>contato</li></a>
+                <a href="./cadastro.html"><li>cadastre-se</li></a>
+            </ul>
+        </nav>
+        <section>
+            <a href="https://www.instagram.com/prefsalvador/?hl=pt-br"><img src="./imgs/instagram.png" alt="Instagram"></a>
+            <a href="https://www.youtube.com/c/PrefeituradoSalvadorOficial"><img src="./imgs/youtube.png" alt="Youtube"></a>
+        </section>
+    </header>
+    <main>
+        <h1>Cadastre-se</h1>
+        <section class="formulario">
+        <form action="#">
+            <fieldset>
+                <legend>Dados Cadastrais</legend>
+                <div>
+                    <label for="nome">Nome: </label>
+                    <input id="nome" type="text" required>
+
+                    <label for="sobrenome">Sobrenome: </label>
+                    <input id="sobrenome" type="text" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email: </label>
+                    <input id="email" type="email" required>
+
+                    <label for="telefone">Telefone: </label>
+                    <input id="telefone" type="number" required>
+                </div>
+
+                <div>
+                    <label for="nascimento">Data de Nascimento: </label>
+                    <input id="nascimento" type="date" required>
+                </div>
+
+                <div class="responsive-direction">
+                    <label>Já é maior de Idade?</label>
+                    <div>
+                        <input name="group" type="radio" checked>
+                        <label>Sim</label>
+                        <input name="group" type="radio">
+                        <label>Não</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informações Adicionais</legend>
+                <div>
+                    <label>Ponto de Interesse:</label>
+                    <select>
+                        <option>Porto da Barra</option>
+                        <option>Farol de Itapuã</option>
+                        <option>Pelourinho</option>
+                        <option>Parque da Cidade</option>
+                        <option>Elevador Lacerda</option>
+                    </select>
+                </div>
+
+                <div class="responsive-direction">
+                    <label>Interesse na Cidade: </label>
+                    <div>
+                        <input for="turista" type="checkbox">
+                        <label for="turista">Turista</label>
+                    </div>
+                    <div>
+                        <input for="residente" type="checkbox">
+                        <label for="residente">Residente</label>
+                   </div>
+                   <div>
+                        <input for="estudante" type="checkbox">
+                        <label for="estudante">Estudante</label>
+                    </div> 
+                </div>
+
+            <div class="responsive-direction">
+                <div>
+                    <input for="notificacoes" type="checkbox">
+                    <label for="notificacoes">Deseja receber notícias diariamente no seu email?</label>
+                 </div>
+            </div>
+            </fieldset>
+
+            <div>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Começar do Zero">
+            </div>
+        </form>
+    </section>
+    </main>
+</body>
+</html>

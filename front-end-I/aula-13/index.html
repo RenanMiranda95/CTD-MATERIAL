@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastre-se</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png" alt="Facebook">
+        <form aria-required="true">
+            <h1>Cadastre-se</h1>
+            <h2>É rápido e fácil.</h2>
+            <input placeholder="Nome" type="text" id="nome">
+            <input placeholder="Sobrenome" type="text" id="sobrenome">
+
+            <div>
+            <input placeholder="Email" type="email" id="email">
+            </div>
+            <div>
+            <input placeholder="Senha" type="password" id="senha">
+            </div>    
+            <div>
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="data">
+            </div>
+            <div>
+            <label for="genero">Gênero</label>
+            <select name="genero" id="genero">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+            </select>
+            <label for="observation">Observações:</label>
+            <textarea name="observation" id="observation"></textarea>
+        </div>
+            <div>
+            <button type="button">Cadastrar</button>
+            <button type="reset">Apagar Dados</button>
+        </div>
+        </form>
+    </section>
+</body>
+</html>

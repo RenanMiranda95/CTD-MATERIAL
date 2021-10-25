@@ -1,0 +1,78 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes move-ball
+{
+    0%
+    {
+        opacity: 0;
+    }
+
+    100%
+    {
+        opacity: 1;
+        transform: translate(900px);
+    }
+}
+
+.ballRed
+{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: red;
+    animation-duration: 5s;
+    animation-name: move-ball;
+    animation-iteration-count: infinite;
+    animation-direction:alternate;
+
+
+}
+
+div img
+{
+    display: block;
+}
+
+img
+{
+    width: 300px;
+
+}
+
+
+.marteloImg
+{
+    width: 200px;
+    margin-left: 70px;
+    transition-duration: 0.7s;
+    transform: rotate(-60deg);
+}
+
+.marteloImg:hover
+{
+    transform: rotate(200deg);
+    translate: 100px;
+
+}
+
+button
+{
+    margin-top: 70px;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border:0;
+    background-color: rgb(255, 159, 68);
+    color: white;
+    font-size: 20px;
+    transition-duration: 1s;
+}
+
+button:hover{
+    background-color:  rgb(197, 98, 5);
+}

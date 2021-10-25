@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <title>Finalizar pedido</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="https://i.pinimg.com/originals/74/13/93/741393fd17c877fcd7f7769094d47bb3.png" alt="Logo">
+                <ul class="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>Quem Somos</li></a>
+                    <a href="#"><li>Galeria de Fotos</li></a>
+                    <a href="#"><li>Loja Virtual</li></a>
+                </ul>
+            </div>
+        </header>
+        <main class="formulario">
+            <h1>Finalizar Pedido</h1>
+            <form>
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <div>
+                        <input type="text" placeholder="Nome">
+                        <input type="text" placeholder="Sobrenome">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="CPF">
+                    </div>
+
+                    <div>
+                        <label for="genero">Gênero:</label>
+                        <select name="genero" id="genero">
+                            <option value="M">Masculino</option>
+                            <option value="F">Feminino</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados da Entrega</legend>
+                    <div>
+                        <input type="text" placeholder="Endereço Completo">
+                        <input type="text" placeholder="Complemento">
+                    </div>
+
+                    <div>
+                        <input type="text" placeholder="CEP">
+                        <input type="text" placeholder="Cidade">
+                    </div>
+
+                    <div>
+                        <label for="estado">Selecione o estado:</label>
+                        <select name="estado" id="estado">
+                            <option>Acre</option>
+<option>Alagoas </option>
+<option>Amapá </option>
+<option>Amazonas </option>
+<option>Bahia </option>
+<option>Ceará</option>
+<option>Espírito</option>
+<option>Goiás 	</option>
+<option>Maranhão</option>
+<option>Mato Grosso </option>
+<option>Mato Grosso do Sul</option>
+<option>Minas Gerais</option>
+<option>Pará</option>
+<option>Paraíba</option>
+<option>Paraná</option>
+<option>Pernambuco </option>
+<option>Piauí</option>
+<option>Rio de Janeiro</option>
+<option>Rio Grande do Norte</option>
+<option>Rio Grande do Sul</option>
+<option>Rondônia</option>
+<option>Roraima</option>
+<option>Santa Catarina</option>
+<option>São Paulo</option>
+<option>Sergipe</option>
+<option>Tocantins</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Observações do pedido</legend>
+                    <div>
+                        <input type="text" placeholder="Quantidade">
+                    </div>
+                    <div>
+                        <textarea name="" id="" >Informações adicionais. Exemplo: Desejo o doce sem leite condensado!</textarea>
+                    </div>
+                    <div>
+
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Frete</legend>
+                    <div>
+                    <input type="radio" id="frete" name="frete">
+                    <label for="frete">Normal (10 dias úteis) R$5,87</label>
+                    <input type="radio" id="frete" name="frete">
+                    <label for="frete">Expresso (5 dias úteis) R$15,45</label>
+                    <input type="radio" id="frete" name="frete">
+                    <label for="frete">Rapidão (1 dia útil) R$55,10</label>
+                    </div>
+                </fieldset>
+
+                <button type="submit">Finalizar Pedido e baixar boleto</button>
+            </form>
+        </main>
+    </body>
+    </html>
+

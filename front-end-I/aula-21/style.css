@@ -1,0 +1,23 @@
+*
+{
+    padding: 0;
+    margin: 0;
+}
+
+.carrosel
+{
+    display: flex;
+}
+
+.button-change
+{
+    width: 70px;
+    height: 500px;
+}
+
+.slide
+{
+    width: 700px;
+    height: 500px;
+    transition-duration: 1s;
+}

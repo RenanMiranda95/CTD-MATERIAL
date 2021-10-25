@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+main
+{
+    margin: auto;
+    padding-top: 5%;
+    width: 500px;
+    height: 300px;
+    background-color: thistle;
+    border-radius: 20px;
+    text-align: center;
+}
+
+p
+{
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+
+p::first-letter
+{
+    font-size: 30px;
+}
+
+.input
+{
+    width: 250px;
+    height: 40px;
+    transition: 0.6s;
+}
+
+.input:focus
+{
+    background-color:rgb(255, 190, 179);
+    border: 0;
+}
+
+button
+{
+    width: 150px;
+    height: 40px;
+    background-color: tomato;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    transition: 0.6s;
+}
+
+
+button:hover
+{
+    width: 150px;
+    cursor: pointer;
+    background-color: yellowgreen;
+}
+
+div
+{
+    padding-top: 20px;
+}
+
+
+input[type="checkbox"]:checked {
+    margin: 10px;
+  }
+
+  
+
+select option:nth-child(2n)
+{
+    background-color: tomato;
+}
+
+input:disabled
+{
+    margin: 10px;
+    border: 0;
+    padding: 5px;
+    background-color: #f2f2f2;
+    border: solid 1px #dbdbdb;
+
+}
+
+input:enabled
+{
+    background-color: rgb(235, 222, 41);
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2? família = Bebas + Neue & display = trocar ');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: #ffe9e9;
+}
+
+header
+{
+    height: 105px;
+    background-color: #dd1a22;
+    
+}
+
+header div
+{
+    width: 60%;
+    height: 100px;
+    /* border: solid 1px white; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: 25px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header img
+{
+    height: 100px;
+}
+
+.menu li, .menu a, .menu a:hover
+{
+    display: inline;
+    padding: 15px;
+    text-decoration:none;
+    color: white;
+}
+
+.produtos
+{
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.produto
+{
+    width: 250px;
+    height: 450px;
+    border: solid 1px #ff9090;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+    background-color: white
+    ;
+}
+
+.produto:hover
+{
+    border: 1px solid red;
+}
+
+
+
+h1
+{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2
+{
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h3
+{
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.produto img
+{
+    width: 230px;
+}
+
+.produto a, .produto a:hover
+{
+    height: 20px;
+    padding: 10px;
+    background-color: #dd1a22;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 30px;
+    border-radius: 10px;
+}
+
+.formulario
+{
+    width: 60%;
+    margin: auto;
+    position: relative;
+    top:10px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario input
+{
+    width: 40%;
+    height: 30px;
+    margin: 10px;
+}
+
+.formulario fieldset
+{
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.formulario textarea
+{
+    width: 90%;
+    height: 150px;
+}
+
+.formulario button, select
+{
+    width: 220px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #dd1a22;
+    color: white;
+    border: none;
+
+}

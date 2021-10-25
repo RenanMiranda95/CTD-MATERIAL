@@ -1,0 +1,93 @@
+@media(max-width:850px)
+{
+    header .logo
+    {
+        margin: 0 auto;
+    }
+
+    .menu-button
+    {
+        width: 35px;
+        height: 35px;
+        position: relative;
+        left: 10%;
+        border: none;
+        display: block;
+        background-image: url("./imgs/menu.png");
+        background-color: #ffffff00;
+        background-size: cover;
+        background-position: center;
+        cursor: pointer;
+        z-index: 2;
+    }
+    
+    header section
+    {
+        display: none;
+    }
+
+    #nav-menu.active #menu
+    {
+        display: block;
+    }
+    
+    #menu
+    {
+        width: 70vw;
+        height: 100vh;
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 80px;
+        background-color: rgba(255, 255, 255, 0.925);
+        z-index: 1;
+    }
+
+
+    .nav-menu ul li
+    {
+        display: flex;
+        flex-direction: column;
+        z-index:1;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+
+    .section-imgs
+    {
+        margin-top: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section-imgs section
+    {
+        width: 140px;
+        margin: 5px;
+    }
+
+
+}
+
+@media(max-width:780px)
+{
+    .formulario div
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .formulario input
+    {
+        width: 100%;
+    }
+
+    .responsive-direction div
+    {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}

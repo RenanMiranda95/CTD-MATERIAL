@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Open Sans', sans-serif;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-areas: 
+    'header header'
+    'aside main'
+    'footer footer'
+    ;
+}
+
+body header
+{
+    height: 100px;
+    background-color: #b0baa3;
+    grid-area: header;
+    font-size: 50px;
+    color: white;
+    font-weight: 500;
+    text-align: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.199);
+}
+
+body aside
+{
+    grid-area: aside;
+    background-color: #9eb383;
+}
+
+aside ul
+{
+    list-style: none;
+}
+
+aside ul li
+{
+    padding: 20px 0 20px 0;
+    transition-duration: 0.6s;
+    text-align: center;
+    cursor: pointer;
+}
+
+aside ul li a
+{
+    text-decoration: none;
+    color: white;
+
+}
+
+aside ul li:hover
+{
+    background-color: #b0baa3;
+}
+
+body main
+{
+    grid-area: main;
+    padding: 20px 0 0 20px;
+}
+
+body main img
+{
+    transition-duration: 0.6s;
+    border-radius: 10px;
+}
+
+body main img:hover
+{
+    transform: scale(1.02);
+
+}
+
+body main p
+{
+    width: 1000px;
+}
+
+body footer
+{
+    grid-area: footer;
+    height: 200px;
+    background-color: #b0baa3;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+}

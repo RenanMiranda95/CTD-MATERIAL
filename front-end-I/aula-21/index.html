@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="carrosel">
+        <button class="button-change" id="prevBt"> < </button>
+        <section class="slide" id="slide"></section>
+        <button class="button-change" id="nextBt"> > </button>
+    </div>
+
+    <script onload>
+        const prevBt = document.getElementById("prevBt");
+        const nextBt = document.getElementById("nextBt");
+        const slide = document.getElementById("slide");
+        const imagemUm = "red";
+        const imagemDois = "blue";
+        const imagemTres = "green";
+
+        let contadorIndice = 0;
+        let lista = [imagemUm, imagemDois, imagemTres];
+
+        slide.style.backgroundColor = lista[contadorIndice];
+
+        let nextImagem = () =>
+        {
+            if(contadorIndice >= lista.length)
+            {
+                contadorIndice = 0;
+            }
+            ++contadorIndice;
+            slide.style.backgroundColor = lista[contadorIndice];
+
+            console.log(contadorIndice);
+
+        }
+
+        let prevImagem = () =>
+        {
+            if(contadorIndice == 0)
+            {
+                contadorIndice = lista.length;
+            }
+            --contadorIndice;
+            slide.style.backgroundColor = lista[contadorIndice];
+
+            console.log(contadorIndice);
+        }
+
+        prevBt.addEventListener('click', prevImagem);
+        nextBt.addEventListener('click', nextImagem);
+    </script>
+</body>
+</html>
